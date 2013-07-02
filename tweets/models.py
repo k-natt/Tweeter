@@ -45,7 +45,6 @@ class Tweet(models.Model):
 	created = models.DateTimeField(auto_now_add = True)
 	text    = models.CharField(max_length = 140)
 	approved = models.DateTimeField(null = True)
-	# If approver is null and approved isn't, it was automatic, i.e. passed the filters.
 	approver = models.ForeignKey(User, null = True, related_name = 'tweets_authorized')
 
 	class Meta:
@@ -70,6 +69,4 @@ class Tweet(models.Model):
 
 	def __unicode__(self):
 		return self.text
-		#return "{0}: {1}".format(self.author, self.text)
-
 

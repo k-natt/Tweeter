@@ -13,3 +13,5 @@ objects.
 
 Both dirty and replaceable words will be wrapped to match word boundaries and
 not preceded by a hashtag (`#`) unless the "Raw regex" option is marked.
+
+Remember to `syncdb` before using.
