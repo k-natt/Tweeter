@@ -3,7 +3,7 @@ Tweeter
 
 Send tweets with bad-word checking and autocorrection
 
-Requires `python-twitter`, which can be installed with `pip`.
+Requires [`python-twitter`](https://code.google.com/p/python-twitter/), which can be installed with `pip`.
 
 To approve dirty tweets, editors require the `approve_tweets` permission.
 
